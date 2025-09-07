@@ -331,10 +331,10 @@ public class Main {
 
     private void seedDemoData() {
         var ivan = service.addPerson("Басангов", "Николай", "Додлаевич", LocalDate.of(1949, 1, 5), null, Gender.MALE);
-        var maria = service.addPerson("Басангова", "Галина", "Сангаджиева", LocalDate.of(1951, 3, 2), null, Gender.FEMALE);
+        var maria = service.addPerson("Басангова", "Гиляна", "Басангова", LocalDate.of(1951, 3, 2), null, Gender.FEMALE);
         var petr = service.addPerson("Басангов", "Борис", "Николаевич", LocalDate.of(1978, 6, 12), null, Gender.MALE);
         var olga = service.addPerson("Басангов", "Данил", "Николаевич", LocalDate.of(1986, 11, 23), null, Gender.MALE);
-        var nina = service.addPerson("Басангова", "Гиляна", "Николаевна", LocalDate.of(1974, 2, 1), null, Gender.FEMALE);
+        var nina = service.addPerson("Басангова", "Галина", "Сангаджиева", LocalDate.of(1974, 2, 1), null, Gender.FEMALE);
 
         service.linkSpouses(ivan.getId(), maria.getId());
         service.linkParentChild(ivan.getId(), petr.getId());
